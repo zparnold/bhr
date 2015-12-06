@@ -7,4 +7,4 @@ before -script:
   - bundle exec rake db:test:prepare
 
 script:
-  - bundle exec rake spec
+  - bundle exec rake test
