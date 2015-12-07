@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   post '/login' => 'web_sessions#create'
   delete '/logout' => 'web_sessions#destroy'
   get '/' => 'static_pages#index'
-  root '/'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
