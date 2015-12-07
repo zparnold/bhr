@@ -13,7 +13,11 @@
         <li><%= link_to 'Users', users_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <% if curent_user.present? %>
+        <li><a href="/logout">Logout</a></li>
+            <% else %>
+            <li><a href="/login">Login</a></li>
+        <% end %>
       </ul>
     </div>
   </div>

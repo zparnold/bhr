@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+  <li><%= link_to 'Home', '/' %></li>
+  <% unless !current_page?('/') %>
+      <li class="active"><%= content_for(:title) if content_for?(:title) %></li>
+  <% end %>
+</ul>
