@@ -4,16 +4,17 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  get '/' => 'static_pages#index'
-  get '/login' => 'web_sessions#new'
-  post '/login' => 'web_sessions#create'
-  delete '/logout' => 'web_sessions#destroy'
+
   resources :prayer_requests
   resources :testimonies
   resources :users
   resources :sessions
   resources :super_users
 
+  get '/login' => 'web_sessions#new'
+  post '/login' => 'web_sessions#create'
+  delete '/logout' => 'web_sessions#destroy'
+  get '/' => 'static_pages#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
