@@ -7,3 +7,16 @@ development:
   host: localhost
   port: 5432
 
+test:
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: d8h0e48kl1mu4s
+  username: ypetslretazqcq
+  password: Gpt6QZ5kAkaUPYIJO2S6LxJjyo
+  host: ec2-54-204-41-175.compute-1.amazonaws.com
+  port: 5432
