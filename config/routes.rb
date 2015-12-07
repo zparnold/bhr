@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   resources :prayer_requests
   resources :testimonies
   resources :users
-
+  resources :sessions
+  resources :super_users
   root 'welcome#index'
 
   # Example of regular route:

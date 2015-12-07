@@ -11,9 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151207055341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "prayer_requests", force: :cascade do |t|
+    t.string   "skype_name"
+    t.string   "first_last_name"
+    t.string   "email_address"
+    t.string   "location"
+    t.integer  "pre_pain_level"
+    t.text     "prayer_request"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "testimonies", force: :cascade do |t|
+    t.string   "prayer_servant"
+    t.text     "testimony"
+    t.integer  "post_pain_level"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_hash"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
