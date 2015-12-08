@@ -1,0 +1,25 @@
+<h3>New Session</h3>
+<br>
+<div class="container">
+<%= form_for @session, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+      <fieldset>
+        <legend>Legend</legend>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+            <%= f.text_field :name, html: {:class=>'form-control ', :placeholder=>'Name'}%>
+          </div>
+          <label  class="col-lg-2 control-label">When?</label>
+          <div class="col-lg-10">
+            <%= f.text_field :when, html: {:class=>'form-control ', :placeholder=>'Date'}, "data-provide" => 'datepicker' %>
+          </div>
+        </div>
+        </fieldset>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <%= button_tag 'Cancel',:class=>'btn btn-default',  type: :reset %>
+          <%= f.submit 'Submit', :class=>'btn btn-primary' %>
+        </div>
+      </div>
+<% end %>
+  </div>

@@ -13,7 +13,7 @@
   <tbody>
   <% @testimonies.each do |t| %>
   <tr>
-    <td><%=	 link_to '#{t.prayer_request_id}', prayer_request_path(t.prayer_request.id) %></td>
+    <td><%=	 link_to '#{t.prayer_request.id}', prayer_request_path(t.prayer_request.id) %></td>
     <td><%= t.testimony %></td>
     <td><%=	 t.post_pain_level %></td>
     <td><%= t.prayer_servant %></td>
