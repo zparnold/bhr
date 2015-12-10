@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails bhr: test" uuid="7aef77d2-fd20-4adc-9d40-6b6b80af23d2">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="Rails bhr: production" uuid="36c2c0df-1031-42aa-9dd9-14051db30b6a">
+      <first-sync>true</first-sync>
+      <user-name>ypetslretazqcq</user-name>
+      <user-password>dfeddfdadfdedf9cdffbdff0df9fdfc1dfebdfc1dfcbdfffdffadff3dfe3dfe0dfe5df98dff9df9cdfe6dfd2dfe0dfc0dfd3dfc5</user-password>
+    </data-source>
+    <data-source name="Rails bhr: development" uuid="2fa6e8de-2c09-492e-ae04-07546b11ffd6">
+      <user-name>zach</user-name>
+      <schema-pattern>development.pg_catalog development.public</schema-pattern>
+      <default-schemas>development.public</default-schemas>
+    </data-source>
+  </component>
+</project>
